@@ -1,0 +1,77 @@
+object Form1: TForm1
+  Left = 373
+  Height = 322
+  Top = 243
+  Width = 471
+  Caption = 'Соколов 322-а 4 лб'
+  ClientHeight = 322
+  ClientWidth = 471
+  LCLVersion = '1.0.6.0'
+  object Button1: TButton
+    Left = 16
+    Height = 25
+    Top = 240
+    Width = 75
+    Caption = 'Вычислить'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Memo1: TMemo
+    Left = 16
+    Height = 202
+    Top = 32
+    Width = 192
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 112
+    Height = 25
+    Top = 240
+    Width = 75
+    Caption = 'Очистить'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+  object Button3: TButton
+    Left = 112
+    Height = 25
+    Top = 272
+    Width = 75
+    Caption = 'Выход'
+    OnClick = Button3Click
+    TabOrder = 3
+  end
+  object Chart1: TChart
+    Left = 224
+    Height = 256
+    Top = 32
+    Width = 240
+    AxisList = <    
+      item
+        Minors = <>
+        Title.LabelFont.Orientation = 900
+      end    
+      item
+        Alignment = calBottom
+        Minors = <>
+      end>
+    Foot.Brush.Color = clBtnFace
+    Foot.Font.Color = clBlue
+    Title.Brush.Color = clBtnFace
+    Title.Font.Color = clBlue
+    Title.Text.Strings = (
+      'TAChart'
+    )
+    ParentColor = False
+    object Chart1LineSeries1: TLineSeries
+    end
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 18
+    Top = 8
+    Width = 91
+    Caption = 'sqr(x)-ln(x)=0'
+    ParentColor = False
+  end
+end
